@@ -24,10 +24,21 @@
       <div class="jumbotron">
         <h1>A Simple Web Log!</h1>
         <p>Write it down before you forget!</p>
-        <p><a href="#" class="btn btn-primary btn-xl" role="button" id="edit" aria-label="Center">Add Entry</a>
       </div>
-
-      <div class="row">
+      <div class="form-group">
+        <label for="new-post-title">Post Title:</label>
+        <input type="text" class="form-control" id="new-post-title">
+      </div>
+      <div class="form-group">
+        <label for="new-post">What would you like to say?</label>
+        <textarea class="form-control" rows="5" id="new-post"></textarea>
+        <br>
+        <p><a href="#" class="btn btn-primary btn-xl pull-right" role="button" id="submit-button" aria-label="Center">Submit</a>
+      </div>
+    </div>
+    <hr>
+    <div class="container" >
+      <div class="row" id="all-posts">
         <div class="col-sm-8 col-sm-offset-2">
           <div class="thumbnail">
             <div class="caption">
@@ -39,7 +50,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-8 col-sm-offset-2">
+        <div class="col-sm-8 col-sm-offset-2" id="post">
           <div class="thumbnail">
             <div class="caption">
               <button type="button" name="button" class="btn btn-xs pull-right" id="del">
@@ -61,8 +72,19 @@
             </div>
           </div>
         </div>
-
+        <div class="col-sm-8 col-sm-offset-2">
+          <div class="thumbnail">
+            <div class="caption">
+              <button type="button" name="button" class="btn btn-xs pull-right" id="del">
+                <span class="glyphicon glyphicon-remove"></span>
+              </button>
+              <h3>Sample Post 4</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
     </div>
 
 
