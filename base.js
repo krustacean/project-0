@@ -18,7 +18,7 @@ $(document).ready(function() {
   $('#submit-button').on('click',function(){
      $title = $('#new-post-title').eq(0).val();
      $post = $('#new-post').eq(0).val();
-     dHtml = '<p><small><i>Writen on ' + D.toLocaleDateString();
+     dHtml = '<p><small><i>Written on ' + D.toLocaleDateString();
      // prepend html into post list
      $('#all-posts').prepend( postHtml + $title + '</h3>' + '<p>' + $post + '</p>' + dHtml + '</div></div></div>');
      //clear forms
