@@ -6,4 +6,3 @@ The blog should retain the user's previous blog posts and also allow the user to
 1. Entry should be time stamped.
 2. Show blog's stats.
 3. Edit entries
-4. 
