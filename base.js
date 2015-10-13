@@ -16,6 +16,8 @@ $(document).ready(function() {
                              + '<div class="caption"><button type="button" name="button" class="btn btn-xs pull-right" id="del">'
                              + '<span class="glyphicon glyphicon-remove"></span></button>'
                              + '<h3> ' + title + '</h3>' + '<p>' + post + '</p></div></div></div>');
+     $('#new-post-title').eq(0).val('');
+     $('#new-post').eq(0).val('');
   });
 });
 // append html onto page
