@@ -4,6 +4,7 @@ var postHtml = '<div class="col-sm-8 col-sm-offset-2"><div class="thumbnail">'
                 + '<div class="caption"><button type="button" name="button" class="btn btn-xs pull-right delete">'
                 + '<span class="glyphicon glyphicon-remove"></span></button>'
                 + '<h3> '
+var D = new Date();
 
 $(document).ready(function() {
 // add event listeners to page
@@ -17,8 +18,9 @@ $(document).ready(function() {
   $('#submit-button').on('click',function(){
      $title = $('#new-post-title').eq(0).val();
      $post = $('#new-post').eq(0).val();
+     dHtml = '<p><small><i>Writen on ' + D.toLocaleDateString();
      // prepend html into post list
-     $('#all-posts').prepend( postHtml + $title + '</h3>' + '<p>' + $post + '</p></div></div></div>');
+     $('#all-posts').prepend( postHtml + $title + '</h3>' + '<p>' + $post + '</p>' + dHtml + '</div></div></div>');
      //clear forms
      $('#new-post-title').eq(0).val('');
      $('#new-post').eq(0).val('');
