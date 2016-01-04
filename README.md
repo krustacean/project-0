@@ -1,7 +1,7 @@
 ## Project 0 README
 I used bootstrap and jquery to create a simple webpage that acts as a blog or simple notetaking app. It's not done yet I still need to implement localStorage for the posts so that when a user visits the site they will see it.
 
-Here is a link to the project in action: [Riley's Project 0](https://krustacean.github.io/project-0/)
+Here is a link to the project in action: [Riley's Project 0](https://rileygelwicks.github.io/project-0/)
 
 Below are some of the tools I used to create the web app.
 
